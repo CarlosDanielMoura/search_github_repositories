@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&family=Poppins:ital,wght@0,400;0,500;1,300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Risque&family=Roboto:wght@700&display=swap");
 
 * {
   margin: 0;
@@ -7,137 +7,108 @@
 }
 
 :root {
-  --background--fundo: ;
+  --background--fundo: #00523f;
+  --background--img: #ffc42a;
+
+  --color-text: #ffffff;
 }
 
 body {
-  font-family: "Oswald", sans-serif;
-  background-color: #85ffbd;
-  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+  background: var(--background--fundo);
+  height: 100vh;
+}
 
+.imgs {
+  position: relative;
+}
+.imgs .img_fundo {
+  position: absolute;
+  height: 100vh;
+  right: 0;
+  top: 0;
+}
+
+.imgs .img_lampada {
+  position: absolute;
+  left: 980px;
+  top: -40px;
+
+  max-height: 721px;
+}
+
+.imgs .img_perso {
+  position: absolute;
+  left: 1102px;
+  top: 233px;
+}
+
+.img_git {
+  margin-top: 50px;
+}
+
+.wrapper {
+  position: absolute;
+  width: 65vw;
   height: 100vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: flex-start;
   align-items: center;
+  gap: 70px;
 }
 
-.container {
-  width: 500px;
-  height: 500px;
-  border: 1px solid black;
-  border-radius: 20px;
+.wrapper img {
+  height: 150px;
 }
 
-.git_img img {
-  background-size: cover;
-  background-position: center;
-  height: 300px;
-}
-.git_img {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
 .form {
   display: flex;
   flex-direction: column;
-  gap: 25px;
-}
-/* use it in dark theme */
-.input-container {
-  position: relative;
-  margin: 50px auto;
-  width: 190px;
+  justify-content: center;
+  align-items: center;
+  width: 70%;
 }
 
-.input-container input[type="text"] {
-  font-size: 20px;
-  color: rgb(255, 255, 255);
+.form input {
+  margin-bottom: 30px;
   border: none;
-  border-bottom: 2px solid #a5a2a2;
+  background: transparent;
+  border-bottom: 1px solid var(--background--img);
+  color: var(--color-text);
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  width: 483px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+input:focus {
   outline: none;
-  width: 100%;
-  background-color: transparent;
+}
+input::placeholder {
+  color: var(--color-text);
+  font-size: 16px;
 }
 
-.label {
-  transition: all 0.3s ease;
-  color: #d3d2d2;
-  position: absolute;
-  top: 0;
-  left: 0;
-  pointer-events: none;
+.btn-customs {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--background--img);
+  border-radius: 10px;
+  color: var(--background--fundo);
+  font-family: "Roboto", sans-serif;
+  width: 483px;
+  height: 50px;
+  font-size: 26px;
+  border: none;
 }
 
-.input-container input[type="text"]:focus ~ .label,
-.input-container input[type="text"]:valid ~ .label {
-  top: -20px;
-  transition: 0.3s;
-  color: rgb(0, 0, 0);
-}
-
-.input-container .underline {
-  position: absolute;
-  bottom: 4px;
-  left: -7px;
-  height: 2px;
-  width: 110%;
-  background-color: rgb(172, 46, 172);
-  transform: scaleX(0);
-}
-
-.input-container .sideline {
-  position: relative;
-  bottom: 15px;
-  right: 18px;
-  height: 2px;
-  width: 18%;
-  background-color: rgb(172, 46, 172);
-  transform: scaleX(0);
-  rotate: 90deg;
-}
-
-.input-container .upperline {
-  position: absolute;
-  bottom: 30px;
-  left: -8px;
-  height: 2px;
-  width: 110%;
-  background-color: rgb(172, 46, 172);
-  transform: scaleX(0);
-}
-
-.input-container .line {
-  position: relative;
-  bottom: 17px;
-  left: 178px;
-  height: 2px;
-  width: 18%;
-  background-color: rgb(172, 46, 172);
-  transform: scaleX(0);
-  rotate: 90deg;
-}
-
-.input-container input[type="text"]:focus ~ .underline,
-.input-container input[type="text"]:valid ~ .underline {
-  transform: scaleX(1);
-  transition: 1s;
-}
-
-.input-container input[type="text"]:focus ~ .sideline,
-.input-container input[type="text"]:valid ~ .sideline {
-  transform: scaleX(1);
-  transition: 1s;
-}
-
-.input-container input[type="text"]:focus ~ .upperline,
-.input-container input[type="text"]:valid ~ .upperline {
-  transform: scaleX(1);
-  transition: 1s;
-}
-
-.input-container input[type="text"]:focus ~ .line,
-.input-container input[type="text"]:valid ~ .line {
-  transform: scaleX(1);
-  transition: 1s;
+h1 {
+  font-family: "Risque";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 72px;
+  line-height: 83px;
+  color: var(--color-text);
 }

@@ -12,21 +12,31 @@
   </head>
   <body>
     <div class="container">
-      <form class="form" action="">
-        <div class="git_img">
-          <img src="assets/img/icons8-github-375.png" alt="Logo Github" />
-        </div>
+      <div class="imgs">
+        <img class="img_fundo" src="assets/img/imagem-fundo.png" alt="" />
+        <img class="img_lampada" src="assets/img/lampada.png" alt="" />
+        <img class="img_perso" src="assets/img/Personagem.png" alt="" />
+      </div>
 
-        <div class="input-container">
-          <input required="" id="input" type="text" />
-          <label class="label" for="input">DIGITE SEU USUÁRIO</label>
-          <div class="underline"></div>
-          <div class="sideline"></div>
-          <div class="upperline"></div>
-          <div class="line"></div>
-        </div>
-      </form>
+      <div class="wrapper">
+        <img
+          class="img_git"
+          src="assets/img/icons8-github-375 (1).png"
+          alt=""
+        />
+        <h1>Bem Vindo</h1>
+        <form class="form" action="">
+          <input
+            type="text"
+            id="users"
+            name="users"
+            placeholder="Digite o usuário do Github que deseja procurar..."
+          />
+          <button class="btn-customs" type="submit">Pesquisar</button>
+        </form>
+      </div>
     </div>
+
     <script src="utils/js/search.js"></script>
   </body>
 </html>
