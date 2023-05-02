@@ -102,9 +102,10 @@ input::placeholder {
   height: 50px;
   font-size: 26px;
   border: none;
+  cursor: pointer;
 }
 
-h1 {
+.wrapper h1 {
   font-family: "Risque";
   font-style: normal;
   font-weight: 400;

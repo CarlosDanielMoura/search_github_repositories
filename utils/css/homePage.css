@@ -1,0 +1,61 @@
+@import url("../css/search.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+}
+
+.container {
+  display: grid;
+  grid-template-areas: "aside main";
+  grid-template-columns: 400px;
+  height: 100vh;
+}
+
+.aside_user {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  grid-area: "aside";
+  background: var(--background--img);
+}
+
+.aside_user .avatar {
+  width: 100px;
+  height: 100px;
+
+  border: 5px solid var(--background--fundo);
+  border-radius: 100%;
+
+  margin-top: 30px;
+}
+
+.aside_user .avatar img {
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+.aside_user h1 {
+  font-family: "Risque";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 83px;
+  color: var(--background--fundo);
+}
+
+.conteudo_pessoal {
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  background: var(--background--fundo);
+  grid-area: "main";
+}
