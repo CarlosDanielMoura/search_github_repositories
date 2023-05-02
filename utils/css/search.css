@@ -1,0 +1,143 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;400;600&family=Poppins:ital,wght@0,400;0,500;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --background--fundo: ;
+}
+
+body {
+  font-family: "Oswald", sans-serif;
+  background-color: #85ffbd;
+  background-image: linear-gradient(45deg, #85ffbd 0%, #fffb7d 100%);
+
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 500px;
+  height: 500px;
+  border: 1px solid black;
+  border-radius: 20px;
+}
+
+.git_img img {
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+.git_img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+/* use it in dark theme */
+.input-container {
+  position: relative;
+  margin: 50px auto;
+  width: 190px;
+}
+
+.input-container input[type="text"] {
+  font-size: 20px;
+  color: rgb(255, 255, 255);
+  border: none;
+  border-bottom: 2px solid #a5a2a2;
+  outline: none;
+  width: 100%;
+  background-color: transparent;
+}
+
+.label {
+  transition: all 0.3s ease;
+  color: #d3d2d2;
+  position: absolute;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.input-container input[type="text"]:focus ~ .label,
+.input-container input[type="text"]:valid ~ .label {
+  top: -20px;
+  transition: 0.3s;
+  color: rgb(0, 0, 0);
+}
+
+.input-container .underline {
+  position: absolute;
+  bottom: 4px;
+  left: -7px;
+  height: 2px;
+  width: 110%;
+  background-color: rgb(172, 46, 172);
+  transform: scaleX(0);
+}
+
+.input-container .sideline {
+  position: relative;
+  bottom: 15px;
+  right: 18px;
+  height: 2px;
+  width: 18%;
+  background-color: rgb(172, 46, 172);
+  transform: scaleX(0);
+  rotate: 90deg;
+}
+
+.input-container .upperline {
+  position: absolute;
+  bottom: 30px;
+  left: -8px;
+  height: 2px;
+  width: 110%;
+  background-color: rgb(172, 46, 172);
+  transform: scaleX(0);
+}
+
+.input-container .line {
+  position: relative;
+  bottom: 17px;
+  left: 178px;
+  height: 2px;
+  width: 18%;
+  background-color: rgb(172, 46, 172);
+  transform: scaleX(0);
+  rotate: 90deg;
+}
+
+.input-container input[type="text"]:focus ~ .underline,
+.input-container input[type="text"]:valid ~ .underline {
+  transform: scaleX(1);
+  transition: 1s;
+}
+
+.input-container input[type="text"]:focus ~ .sideline,
+.input-container input[type="text"]:valid ~ .sideline {
+  transform: scaleX(1);
+  transition: 1s;
+}
+
+.input-container input[type="text"]:focus ~ .upperline,
+.input-container input[type="text"]:valid ~ .upperline {
+  transform: scaleX(1);
+  transition: 1s;
+}
+
+.input-container input[type="text"]:focus ~ .line,
+.input-container input[type="text"]:valid ~ .line {
+  transform: scaleX(1);
+  transition: 1s;
+}
