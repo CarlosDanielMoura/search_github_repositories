@@ -1,0 +1,9 @@
+ <div class="imgs">
+        <img class="img_fundo" src="assets/img/imagem-fundo.png" alt="" />
+        <img class="img_lampada" src="assets/img/lampada.png" alt="" />
+        <img class="img_perso" src="assets/img/Personagem.png" alt="" />
+
+        <div class="wrapper">
+
+        </div>
+      </div>

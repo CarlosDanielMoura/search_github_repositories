@@ -38,5 +38,5 @@ const setLocalStoreAvatar = (data) => {
 
 const setLocalStoreRepos = (data) => {
   localStorage.setItem("userRepoData", JSON.stringify(data));
-  window.location.href = "../../homepage.html";
+  window.location.href = "homePage.html";
 };
