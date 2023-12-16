@@ -1,9 +1,10 @@
+import AppRoutes from "./routes";
+
 function App() {
   return (
-    <div>
-      <h1>React App</h1>
-    </div>
+    <>
+      <AppRoutes />
+    </>
   );
 }
-
 export default App;
