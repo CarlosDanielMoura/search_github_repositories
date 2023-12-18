@@ -6,7 +6,7 @@ const AppRoutes = () => (
   <Router>
     <Routes>
       <Route path="/" element={<Main />} />
-      <Route path="/repositories" element={<Repositories />} />
+      <Route path="/repositorio/:repositorio" element={<Repositories />} />
     </Routes>
   </Router>
 );
